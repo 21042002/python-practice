@@ -7,13 +7,13 @@ def calculcar_inss(salario):
     """ 
     Calcular o valor do INSS com base no salário bruto.
     """
-    if salario > 6433.58:
+    if salario > 8537.55:
         return  900.70
-    if salario > 3305.23:
+    if salario >  5055.01:
         return salario * 0.14
-    elif salario > 2203.49:
+    elif salario > 3033.01:
         return salario * 0.12
-    elif salario > 1100.01:
+    elif salario > 1621.00:
         return salario * 0.09
     else:
         return salario * 0.075
@@ -32,7 +32,7 @@ def calcular_ir(base):
         return 0.225, (base * 0.225) - 636.13
     elif base > 2826.66:
         return 0.15, (base * 0.15) - 354.80
-    elif base > 1903.99:
+    elif base > 2428.61:
         return 0.075, (base * 0.075) - 142.80
     else:
         return 0, 0
